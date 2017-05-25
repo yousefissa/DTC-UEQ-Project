@@ -5,4 +5,7 @@ All code is being run on an Arduino Uno R3 and a 16x2 LCD Display.
 
 ToDo:
 
-On/Off Switch
+	* On/off switch
+	* Force sensor hookup
+	* Force sensor calibration button
+	
