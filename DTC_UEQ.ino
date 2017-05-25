@@ -34,7 +34,7 @@ void startupPrint(){
   lcd.setCursor(6,1);
   // prints date
   lcd.print("2017");
-  // pauses the code for 4 seconds.
+  // pauses the code for 5 seconds.
   delay(5000);
   // clears the lcd. we're done with displaying the startup screen.
   lcd.clear(); 
