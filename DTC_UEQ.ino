@@ -6,7 +6,7 @@
 // set the display address since it isnt standard
 #define I2C_ADDR 0x3F 
 // set to 16 chars, 2 line display 
-LiquidCrystal_I2C lcd(0x3F, 16, 2); 
+LiquidCrystal_I2C lcd(0x3F, 20, 4); 
 
 
 void setup() {
