@@ -13,12 +13,12 @@ LiquidCrystal_I2C lcd(0x3F, 20, 4);
 
 // define what pins the sensors are connected to
 #define DOUT    A1
-#define CLK     A0
+#define CLK     A2
 // initialize the scale being used
 HX711 scale(DOUT, CLK);
 
 // value passed into scale after calibrating.
-float calibration_factor = 15500;
+float calibration_factor = 420;
 // average weight variable
 float average_weight;
 // class for updating weight displayed
@@ -60,7 +60,7 @@ void loop() {
 //  Serial.print(scale.get_units(), 1);
 //  Serial.print("\t| average:\t");
 
-  // ge tthe average weight by taking 10 measruments
+  // get the average weight by taking 10 measruments
   average_weight = (scale.get_units(10));
   // set the current weight to the average weight
   w.curr = average_weight;
